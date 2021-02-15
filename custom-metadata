@@ -1,0 +1,29 @@
+<?php
+
+
+/*   Update/Create Metadata   
+        (via input box, of course)
+*/
+
+function update_user_age () {
+	$meta_value = $_GET['meta_value'];
+	$user_id = get_current_user_id();
+	if(isset($_GET['meta_value'])){
+		update_user_meta($user_id , 'user_age', $meta_value);
+	};
+};
+update_user_age(); 
+
+
+
+
+/*   Shortcode
+        (show yr info. Throw it in an html block to style.)
+*/
+
+function user_age () {
+	$user_id = get_current_user_id();
+	$user_age = get_user_meta( $user_id, 'user_age', true );
+	return $user_age;
+}
+add_shortcode('user_age' , 'user_age');
