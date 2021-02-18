@@ -1,0 +1,119 @@
+***NOTE***
+  This requires having the Allow Multiple Accounts and User Switching plugins,
+  but the goal is to assimilate some of their code in order to make this standalone.
+  
+  Allow Multiple Accounts:  https://coffee2code.com/wp-plugins/allow-multiple-accounts/
+  User Switching:  https://johnblackbourn.com/wordpress-plugin-user-switching/
+
+
+<?php
+
+add_shortcode( 'show_multi_accounts', 'show_multi_accounts' );
+
+function show_multi_accounts() {
+
+	$user_id = get_current_user_id(); //  bp_displayed_user_id();  
+	$user_info = get_userdata($user_id);
+	$mailaddress = $user_info->user_email;
+	$multiAccountUsersArray = c2c_get_users_by_email($mailaddress);
+	
+
+	
+?>
+	<div style="width: 100%; padding-top: 5vw; padding-bottom: 5vw; background-image: linear-gradient(180deg,rgba(35,31,32,0.91) 0%,rgba(35,31,32,0.92) 100%),url(https://vmonument.wpengine.com/wp-content/uploads/2020/09/banner_02.jpg); background-size: cover; background-position-x: 50%, 50%; background-position-y: 50%, 50%;">
+		<div>
+			<h1 style="text-align: center; color: #ffffff;">Switch Accounts</h1>
+			<p style="text-align: center; color: #ffffff;">Change over to a different account that you own so you can make edits to another memorial.</p>
+		</div>
+	</div>
+	
+	<div class="switch-multi-accounts-div" style="text-align: center; max-width: 1080px; padding: 50px 30px; margin-left: auto; margin-right: auto;">
+		<h3 style="margin-bottom: 10px;">Switch to Account:</h3>
+			<div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 5px; text-align: center; margin-bottom: 10px;">
+
+		
+<?php 
+			foreach($multiAccountUsersArray as $userData) {
+
+				$child_user_id = $userData->ID;
+				$child_user_name = $userData->display_name;
+				$child_avatar_url = get_avatar_url( $child_user_id );
+				$link = user_switching::maybe_switch_url( $userData );
+	
+?>
+				<div>	
+					<a class="tooltip"href=" <?php echo $link  ?>">
+						<img class="switch-to-profile-pic" src=" <?php echo $child_avatar_url  ?>">
+						<span class="tooltiptext"><?php echo $child_user_name  ?></span>
+					</a>	
+				</div>
+<?php
+			};
+?>
+
+		
+			</div>
+		<style>
+			.switch-to-profile-pic {
+				border-radius: 100px; 
+				margin-left: auto; 
+				margin-right: auto;
+			}
+			.switch-to-profile-pic:hover {
+				opacity: 0.75;
+			}
+			
+			/* Tooltip container */
+			.tooltip {
+			  position: relative;
+			  display: inline-block;
+			}
+
+			/* Tooltip text */
+			.tooltip .tooltiptext {
+			  visibility: hidden;
+			  width: 120px;
+			  background-color: #555;
+			  color: #fff;
+			  text-align: center;
+			  padding: 5px 0;
+			  border-radius: 6px;
+
+			  /* Position the tooltip text */
+			  position: absolute;
+			  z-index: 1;
+			  bottom: 125%;
+			  left: 50%;
+			  margin-left: -60px;
+
+			  /* Fade in tooltip */
+			  opacity: 0;
+			  transition: opacity 0.3s;
+			}
+
+			/* Tooltip arrow */
+			.tooltip .tooltiptext::after {
+			  content: "";
+			  position: absolute;
+			  top: 100%;
+			  left: 50%;
+			  margin-left: -5px;
+			  border-width: 5px;
+			  border-style: solid;
+			  border-color: #555 transparent transparent transparent;
+			}
+
+			/* Show the tooltip text when you mouse over the tooltip container */
+			.tooltip:hover .tooltiptext {
+			  visibility: visible;
+			  opacity: 1;
+			}
+		</style>
+	</div>
+
+
+<?php
+};
+
+
+
