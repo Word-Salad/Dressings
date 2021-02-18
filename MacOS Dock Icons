@@ -1,0 +1,329 @@
+/*
+ * DESKTOP
+ */
+ 
+ 
+<div id="dock-container" style="overflow-y: visible !important;">
+<div id="dock" style="overflow-y: visible !important;">
+<ul style="overflow-y: visible !important;">
+	<li id="icon-2">
+        <span>6:30 am</span>
+        <img src="https://movara.com/wp-content/uploads/2020/10/sun.png"/></li>
+	<li id="icon-3">
+         <span>7:00 am</span>
+         <img src="https://movara.com/wp-content/uploads/2020/10/plate.png"/></li>
+	<li id="icon-4">
+         <span>8:00 am</span>
+         <img src="https://movara.com/wp-content/uploads/2020/11/boot.png"/></li>
+         <li id="icon-5">
+        <span>11:30 am</span>
+        <img src="https://movara.com/wp-content/uploads/2020/11/head.png"/></li>
+	<li id="icon-6">
+        <span>12:30 pm</span>
+        <img src="https://movara.com/wp-content/uploads/2020/10/plate.png"/></li>
+	<li id="icon-7">
+         <span>1:15 pm</span>
+         <img src="https://movara.com/wp-content/uploads/2020/11/head.png"/></li>
+	<li id="icon-8">
+         <span>2:30 pm</span>
+         <img src="https://movara.com/wp-content/uploads/2020/10/boxing.png"/></li>
+<li id="icon-9">
+        <span>3:30 pm</span>
+        <img src="https://movara.com/wp-content/uploads/2020/11/push-up.png"/></li>
+	<li id="icon-10">
+       <span>4:30 pm</span>
+       <img src="https://movara.com/wp-content/uploads/2020/11/water.png"/></li>
+	<li id="icon-11">
+         <span>5:30 pm</span>
+         <img src="https://movara.com/wp-content/uploads/2020/10/plate.png"/></li>
+	<li id="icon-12">
+         <span>6:15 pm</span>
+         <img src="https://movara.com/wp-content/uploads/2020/10/drop.png"/></li>
+</ul>
+</div>
+</div>
+
+
+
+
+
+
+<div id="icon-text-2">
+<span class="icons-header-text">6:30  Morning Stretch</span>
+The sunlight peeking over the mountains and into the window of your suite will rouse you out of your deep and restful night’s sleep, ready for the day ahead. You will begin with a series of invigorating stretches that will prepare your body for a day of prioritizing you. These stretches tell your muscles they’ll be working today, and makes sure they’re ready for anything that comes.
+</div>
+
+<div id="icon-text-3">
+<span class="icons-header-text">7:00  Breakfast</span>
+You enter the dining room and a server appears at your table, ready to take your order. Will you have the decadent Chocolate Peanut Butter Smoothie, or the perfectly prepared scrambled eggs? Maybe a bowl of our Famous Movara Homemade Granola. Whatever nutrient-rich meal you choose, a serving fresh fruit is always included. This is the fuel that will get you through the day, and it tastes incredible!
+</div>
+
+<div id="icon-text-4">
+<span class="icons-header-text">8:00  Hike</span>
+After breakfast you’ll hop into a Movara van and head out for your hike, taking in the gorgeous vistas of Southern Utah. The hikes vary in terrain, elevation, and difficulty, but will always be precisely tailored to your skills and abilities. Once you hit the trail with your group, the sweet fresh air filling your lungs, you’ll take your first step on a lifelong journey.
+</div>
+
+<div id="icon-text-5">
+<span class="icons-header-text">11:30  Lecture</span>
+Back at the resort, you enter the lecture hall and find a seat near the front. Today you’ve come to hear an engaging lecture on Understanding Habits, and looking forward to the topics on the agenda the rest of the week. The one-hour session flies by, and you exit the hall with new and meaningful insights about yourself and your relationship with food that you look forward to exploring further. If you’re booked at Movara for multiple weeks, perhaps you’ll do a fitness class instead during this time before lunch.
+</div>
+
+<div id="icon-text-6">
+<span class="icons-header-text">12:30  Lunch</span>
+Another trip to the dining room to recharge with a mouth-watering, nutrient-dense lunch. The server brings the soup first, maybe the Carrot Coconut Ginger, or French Onion. Everything is freshly prepared using locally sourced and organic ingredients whenever possible. The soup course is followed by a hearty main course. Will today be the vegetable-filled Buddha Bowl, the crispy Baja Fish Tacos, or maybe the grass-fed Grilled Steak Pita? Whatever you’re served, it’s going to sustain you for the rest of your afternoon.
+</div>
+
+<div id="icon-text-7">
+<span class="icons-header-text">1:15  Lecture/Cooking Demo</span>
+Feeling full and satisfied after lunch, you’ll pop back into the lecture hall for the Stress Resilience lecture, and learn about how to use stress for your benefit. Or, perhaps you’ll sit in on a cooking demo with our Executive Chef, who will teach you the skills to succeed after your time at Movara is through. After that breakfast and lunch, you’ll definitely want to know how the Chef is able to make healthy eating so rich and flavourful.
+</div>
+
+<div id="icon-text-8">
+<span class="icons-header-text">2:30 Cardio Fitness Class</span>
+You’re starting to feel that it’s time to get that body moving again, so you step into our Court for a boxing fitness class. Strap on the gloves and see what an exhilarating cardio workout boxing can be! Perhaps today is Boot Camp class — and you’re surprised at the compassion and support your trainer provides… nothing like what you expected from a class called “Boot Camp”. Your trainer will challenge you, and you’ll be surprised at how much you’re able to do. It’s definitely more than you ever thought you could! 
+</div>
+
+<div id="icon-text-9">
+<span class="icons-header-text">3:30 Cardio Fitness Class</span>
+It’s another fitness class, but you’re more than ready for it. You look around the state-of-the-art gym and know you’re not going to be bored for the next 45-minutes as you move through a variety of exercises one after the other. It’s circuit training the Movara way, raising your heart rate and strengthening those muscles. By the time you’re done, you may be a little out of breath, but you won’t be able to stop smiling.
+</div>
+
+<div id="icon-text-10">
+<span class="icons-header-text">4:30  Pool or Stretch</span>
+The sun sparkles off the surface of the pool as you slide into the water, and feel instantly refreshed. This fun and unique fitness class has you building muscle while you move your body through the water. Or maybe instead of the aqua class, what you feel like right before Dinner is a revitalizing Yoga stretch to work out those sore muscles after an energizing day.
+</div>
+
+<div id="icon-text-11">
+<span class="icons-header-text">5:30  Dinner</span>
+Breakfast and lunch were incredible, but dinner feels like a well-earned reward after a day of fitness. Tonight the main course is grass-fed Filet Mignon, but tomorrow you’re looking forward to the Orange Honey-Glazed Salmon, and the day after that a few slices of delicious BBQ Chicken Pizza. Dinner at Movara always comes with a delectable dessert, and you’re not sure if you would prefer the Chocolate Ganache Truffle tonight, or the Bananas Foster Flambé?
+</div>
+
+<div id="icon-text-12">
+<span class="icons-header-text">6:15  Spa</span>
+After dinner the rest of the evening is yours to enjoy. It’s the perfect opportunity to visit the Spa and complete your recovery after a challenging but rewarding day of prioritizing yourself. A deep tissue massage sounds perfect right about now! And why not treat yourself and grab a skin-nourishing facial or body wrap, too?
+</div>
+
+
+
+
+
+<script>
+	
+//  The Program Page - Icons (Desktop)   //
+
+jQuery(function($){
+	$(document).ready(function(){
+		
+		$(' #icon-text-3, #icon-text-4, #icon-text-5, #icon-text-6, #icon-text-7, #icon-text-8, #icon-text-9, #icon-text-10, #icon-text-10, #icon-text-11, #icon-text-12').hide();
+
+			
+		$( "#icon-2" ).hover(function() {
+			$( '#icon-text-2' ).show();
+			$( '.icons-text-box>div  div' ).not( "#icon-text-2" ).hide();
+			});	
+			
+		$( "#icon-3" ).hover(function() {
+			$( '#icon-text-3' ).show();
+			$( '.icons-text-box>div  div' ).not( "#icon-text-3" ).hide();
+			});	
+				
+		$( "#icon-4" ).hover(function() {
+			$( '#icon-text-4' ).show();
+			$( '.icons-text-box>div  div' ).not( "#icon-text-4" ).hide();
+			});	
+					
+		$( "#icon-5" ).hover(function() {
+			$( '#icon-text-5' ).show();
+			$( '.icons-text-box>div  div' ).not( "#icon-text-5" ).hide();
+			});	
+		
+		$( "#icon-6" ).hover(function() {
+			$( '#icon-text-6' ).show();
+			$( '.icons-text-box>div div' ).not( "#icon-text-6" ).hide();
+			});	
+			
+		$( "#icon-7" ).hover(function() {
+			$( '#icon-text-7' ).show();
+			$( '.icons-text-box>div  div' ).not( "#icon-text-7" ).hide();
+			});	
+			
+		$( "#icon-8" ).hover(function() {
+			$( '#icon-text-8' ).show();
+			$( '.icons-text-box>div  div' ).not( "#icon-text-8" ).hide();
+			});	
+				
+		$( "#icon-9" ).hover(function() {
+			$( '#icon-text-9' ).show();
+			$( '.icons-text-box>div  div' ).not( "#icon-text-9" ).hide();
+			});	
+					
+		$( "#icon-10" ).hover(function() {
+			$( '#icon-text-10' ).show();
+			$( '.icons-text-box>div  div' ).not( "#icon-text-10" ).hide();
+			});	
+		
+		$( "#icon-11" ).hover(function() {
+			$( '#icon-text-11' ).show();
+			$( '.icons-text-box>div  div' ).not( "#icon-text-11" ).hide();
+			});
+		
+		$( "#icon-12" ).hover(function() {
+			$( '#icon-text-12' ).show();
+			$( '.icons-text-box>div  div' ).not( "#icon-text-12" ).hide();
+			});	
+		
+	});
+});
+</script> 
+
+
+
+
+
+
+/*
+ * MOBILE
+ */
+ 
+ 
+ /*
+
+    This Mobile verison of the Dock Icons uses a Divi Carousel and
+    each item has a CSS ID in this format: "mobile-icon-2"
+
+*/
+
+
+
+
+<div id="mobile-icon-text-2">
+<span class="mobile-icons-header-text">Morning Stretch</span>
+The sunlight peeking over the mountains and into the window of your suite will rouse you out of your deep and restful night’s sleep, ready for the day ahead. You will begin with a series of invigorating stretches that will prepare your body for a day of prioritizing you. These stretches tell your muscles they’ll be working today, and makes sure they’re ready for anything that comes.
+</div>
+
+<div id="mobile-icon-text-3">
+<span class="mobile-icons-header-text">Breakfast</span>
+You enter the dining room and a server appears at your table, ready to take your order. Will you have the decadent Chocolate Peanut Butter Smoothie, or the perfectly prepared scrambled eggs? Maybe a bowl of our Famous Movara Homemade Granola. Whatever nutrient-rich meal you choose, a serving fresh fruit is always included. This is the fuel that will get you through the day, and it tastes incredible!
+</div>
+
+<div id="mobile-icon-text-4">
+<span class="mobile-icons-header-text">Hike</span>
+After breakfast you’ll hop into a Movara van and head out for your hike, taking in the gorgeous vistas of Southern Utah. The hikes vary in terrain, elevation, and difficulty, but will always be precisely tailored to your skills and abilities. Once you hit the trail with your group, the sweet fresh air filling your lungs, you’ll take your first step on a lifelong journey.
+</div>
+
+<div id="mobile-icon-text-5">
+<span class="mobile-icons-header-text">Lecture</span>
+Back at the resort, you enter the lecture hall and find a seat near the front. Today you’ve come to hear an engaging lecture on Understanding Habits, and looking forward to the topics on the agenda the rest of the week. The one-hour session flies by, and you exit the hall with new and meaningful insights about yourself and your relationship with food that you look forward to exploring further. If you’re booked at Movara for multiple weeks, perhaps you’ll do a fitness class instead during this time before lunch.
+</div>
+
+<div id="mobile-icon-text-6">
+<span class="mobile-icons-header-text">Lunch</span>
+Another trip to the dining room to recharge with a mouth-watering, nutrient-dense lunch. The server brings the soup first, maybe the Carrot Coconut Ginger, or French Onion. Everything is freshly prepared using locally sourced and organic ingredients whenever possible. The soup course is followed by a hearty main course. Will today be the vegetable-filled Buddha Bowl, the crispy Baja Fish Tacos, or maybe the grass-fed Grilled Steak Pita? Whatever you’re served, it’s going to sustain you for the rest of your afternoon.
+</div>
+
+<div id="mobile-icon-text-7">
+<span class="mobile-icons-header-text">Lecture/Cooking Demo</span>
+Feeling full and satisfied after lunch, you’ll pop back into the lecture hall for the Stress Resilience lecture, and learn about how to use stress for your benefit. Or, perhaps you’ll sit in on a cooking demo with our Executive Chef, who will teach you the skills to succeed after your time at Movara is through. After that breakfast and lunch, you’ll definitely want to know how the Chef is able to make healthy eating so rich and flavourful.
+</div>
+
+<div id="mobile-icon-text-8">
+<span class="mobile-icons-header-text">Cardio Fitness Class</span>
+You’re starting to feel that it’s time to get that body moving again, so you step into our Court for a boxing fitness class. Strap on the gloves and see what an exhilarating cardio workout boxing can be! Perhaps today is Boot Camp class — and you’re surprised at the compassion and support your trainer provides… nothing like what you expected from a class called “Boot Camp”. Your trainer will challenge you, and you’ll be surprised at how much you’re able to do. It’s definitely more than you ever thought you could! 
+</div>
+
+<div id="mobile-icon-text-9">
+<span class="mobile-icons-header-text">Cardio Fitness Class</span>
+It’s another fitness class, but you’re more than ready for it. You look around the state-of-the-art gym and know you’re not going to be bored for the next 45-minutes as you move through a variety of exercises one after the other. It’s circuit training the Movara way, raising your heart rate and strengthening those muscles. By the time you’re done, you may be a little out of breath, but you won’t be able to stop smiling.
+</div>
+
+<div id="mobile-icon-text-10">
+<span class="mobile-icons-header-text">Pool or Stretch</span>
+The sun sparkles off the surface of the pool as you slide into the water, and feel instantly refreshed. This fun and unique fitness class has you building muscle while you move your body through the water. Or maybe instead of the aqua class, what you feel like right before Dinner is a revitalizing Yoga stretch to work out those sore muscles after an energizing day.
+</div>
+
+<div id="mobile-icon-text-11">
+<span class="mobile-icons-header-text">Dinner</span>
+Breakfast and lunch were incredible, but dinner feels like a well-earned reward after a day of fitness. Tonight the main course is grass-fed Filet Mignon, but tomorrow you’re looking forward to the Orange Honey-Glazed Salmon, and the day after that a few slices of delicious BBQ Chicken Pizza. Dinner at Movara always comes with a delectable dessert, and you’re not sure if you would prefer the Chocolate Ganache Truffle tonight, or the Bananas Foster Flambé?
+</div>
+
+<div id="mobile-icon-text-12">
+<span class="mobile-icons-header-text">Spa</span>
+After dinner the rest of the evening is yours to enjoy. It’s the perfect opportunity to visit the Spa and complete your recovery after a challenging but rewarding day of prioritizing yourself. A deep tissue massage sounds perfect right about now! And why not treat yourself and grab a skin-nourishing facial or body wrap, too?
+</div>
+
+
+
+
+<script>
+	
+//  The Program Page - Icons (Mobile)   //
+
+jQuery(function($){
+	$(document).ready(function(){
+		
+		$(' #mobile-icon-text-3, #mobile-icon-text-4, #mobile-icon-text-5, #mobile-icon-text-6, #mobile-icon-text-7, #mobile-icon-text-8, #mobile-icon-text-9, #mobile-icon-text-10, #mobile-icon-text-10, #mobile-icon-text-11, #mobile-icon-text-12').hide();
+
+			
+		$( "#mobile-icon-2" ).click(function() {
+			$( '#mobile-icon-text-2' ).fadeIn();
+			$( '.mobile-icons-text-box>div  div' ).not( "#mobile-icon-text-2" ).hide();
+			});	
+			
+		$( "#mobile-icon-3" ).click(function() {
+			$( '#mobile-icon-text-3' ).fadeIn();
+			$( '.mobile-icons-text-box>div  div' ).not( "#mobile-icon-text-3" ).hide();
+			});	
+				
+		$( "#mobile-icon-4" ).click(function() {
+			$( '#mobile-icon-text-4' ).fadeIn();
+			$( '.mobile-icons-text-box>div  div' ).not( "#mobile-icon-text-4" ).fadeOut();
+			});	
+					
+		$( "#mobile-icon-5" ).hover(function() {
+			$( '#mobile-icon-text-5' ).fadeIn();
+			$( '.mobile-icons-text-box>div  div' ).not( "#mobile-icon-text-5" ).hide();
+			});	
+		
+		$( "#mobile-icon-6" ).click(function() {
+			$( '#mobile-icon-text-6' ).fadeIn();
+			$( '.mobile-icons-text-box>div div' ).not( "#mobile-icon-text-6" ).hide();
+			});	
+			
+		$( "#mobile-icon-7" ).click(function() {
+			$( '#mobile-icon-text-7' ).fadeIn();
+			$( '.mobile-icons-text-box>div  div' ).not( "#mobile-icon-text-7" ).hide();
+			});	
+			
+		$( "#mobile-icon-8" ).click(function() {
+			$( '#mobile-icon-text-8' ).fadeIn();
+			$( '.mobile-icons-text-box>div  div' ).not( "#mobile-icon-text-8" ).hide();
+			});	
+				
+		$( "#mobile-icon-9" ).hover(function() {
+			$( '#mobile-icon-text-9' ).fadeIn();
+			$( '.mobile-icons-text-box>div  div' ).not( "#mobile-icon-text-9" ).hide();
+			});	
+					
+		$( "#mobile-icon-10" ).click(function() {
+			$( '#mobile-icon-text-10' ).fadeIn();
+			$( '.mobile-icons-text-box>div  div' ).not( "#mobile-icon-text-10" ).hide();
+			});	
+		
+		$( "#mobile-icon-11" ).click(function() {
+			$( '#mobile-icon-text-11' ).fadeIn();
+			$( '.mobile-icons-text-box>div  div' ).not( "#mobile-icon-text-11" ).hide();
+			});
+		
+		$( "#mobile-icon-12" ).click(function() {
+			$( '#mobile-icon-text-12' ).fadeIn();
+			$( '.mobile-icons-text-box>div  div' ).not( "#mobile-icon-text-12" ).hide();
+			});	
+		
+	});
+});
+</script> 
+
+ 
+ 
+ 
+
