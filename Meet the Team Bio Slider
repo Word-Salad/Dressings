@@ -1,0 +1,152 @@
+<script>
+
+//     Meet Our Team - Our Resort     //
+
+jQuery(function($){
+	$(document).ready(function(){
+		
+		$('.meet-our-team-inactive').hide();
+
+		
+		$( ".meet-our-team-blurb-active .et_pb_image_wrap" ).css({ "border":"solid #32adbc 3px", "border-radius": "200px", });
+		$( ".meet-our-team-blurb-inactive .et_pb_image_wrap" ).css({ "border":"solid #ffffff 3px", "border-radius": "200px", });
+		$( ".meet-our-team-blurb-active" ).css({ "color":"#32adbc", });
+		$( ".meet-our-team-active h6" ).css({ "color":"#32adbc", "font-weight": "bold", });
+
+		
+		$( "#meet-our-team-elaine-hartrick-blurb" ).click(function() {
+			$( '.meet-our-team-blurb-active' ).addClass('meet-our-team-blurb-inactive').removeClass('meet-our-team-blurb-active');
+			$( '.meet-our-team-active' ).addClass('meet-our-team-inactive').removeClass('meet-our-team-active').hide();
+			$( "#meet-our-team-elaine-hartrick" ).addClass('meet-our-team-active').removeClass('meet-our-team-inactive').show();
+			$( "#meet-our-team-elaine-hartrick-blurb" ).addClass('meet-our-team-blurb-active').removeClass('meet-our-team-blurb-inactive');
+			$( '#meet-our-team-elaine-hartrick-blurb' ).css({ "color":"#32adbc", });
+			$( '#meet-our-team-elaine-hartrick-blurb h6' ).css({ "color":"#32adbc", });
+			$( '.meet-our-team-blurb-inactive, .meet-our-team-blurb-inactive h6' ).css({ "color": "#333333", });
+			$( "#meet-our-team-elaine-hartrick-blurb .et_pb_image_wrap" ).css({ "border":"solid #32adbc 3px", "border-radius": "200px", });
+			$( ".meet-our-team-blurb-inactive .et_pb_image_wrap" ).css({ "border": "solid #ffffff 3px", });
+		});    
+
+		$( "#meet-our-team-cody-dupree-blurb" ).click(function() {
+			$( '.meet-our-team-blurb-active' ).addClass('meet-our-team-blurb-inactive').removeClass('meet-our-team-blurb-active');
+			$( '.meet-our-team-active' ).addClass('meet-our-team-inactive').removeClass('meet-our-team-active').hide();
+			$( "#meet-our-team-cody-dupree" ).addClass('meet-our-team-active').removeClass('meet-our-team-inactive').show();
+			$( "#meet-our-team-cody-dupree-blurb" ).addClass('meet-our-team-blurb-active').removeClass('meet-our-team-blurb-inactive');
+			$( '#meet-our-team-cody-dupree-blurb' ).css({ "color":"#32adbc", });
+			$( '#meet-our-team-cody-dupree-blurb h6' ).css({ "color":"#32adbc", });
+			$( '.meet-our-team-blurb-inactive, .meet-our-team-blurb-inactive h6' ).css({ "color": "#333",  });
+			$( "#meet-our-team-cody-dupree-blurb .et_pb_image_wrap" ).css({ "border":"solid #32adbc 3px", "border-radius": "200px", });
+			$( ".meet-our-team-blurb-inactive .et_pb_image_wrap" ).css({ "border": "solid #ffffff 3px", });
+		});  
+
+		$( "#meet-our-team-khalob-freeborn-blurb" ).click(function() {
+			$( '.meet-our-team-blurb-active' ).addClass('meet-our-team-blurb-inactive').removeClass('meet-our-team-blurb-active');
+			$( '.meet-our-team-active' ).addClass('meet-our-team-inactive').removeClass('meet-our-team-active').hide();
+			$( "#meet-our-team-khalob-freeborn" ).addClass('meet-our-team-active').removeClass('meet-our-team-inactive').show();
+			$( "#meet-our-team-khalob-freeborn-blurb" ).addClass('meet-our-team-blurb-active').removeClass('meet-our-team-blurb-inactive');
+			$( '#meet-our-team-khalob-freeborn-blurb' ).css({ "color":"#32adbc", });
+			$( '#meet-our-team-khalob-freeborn-blurb h6' ).css({ "color":"#32adbc", "font-weight": "bold", });
+			$( '.meet-our-team-blurb-inactive, .meet-our-team-blurb-inactive h6' ).css({ "color": "#333", "font-weight": "normal", });
+			$( "#meet-our-team-khalob-freeborn-blurb .et_pb_image_wrap" ).css({ "border":"solid #32adbc 3px", "border-radius": "200px", });
+			$( ".meet-our-team-blurb-inactive .et_pb_image_wrap" ).css({ "border": "solid #ffffff 3px", });
+		});  
+
+		$( "#meet-our-team-sharon-reed-blurb" ).click(function() {
+			$( '.meet-our-team-blurb-active' ).addClass('meet-our-team-blurb-inactive').removeClass('meet-our-team-blurb-active');
+			$( '.meet-our-team-active' ).addClass('meet-our-team-inactive').removeClass('meet-our-team-active').hide();
+			$( "#meet-our-team-sharon-reed" ).addClass('meet-our-team-active').removeClass('meet-our-team-inactive').show();
+			$( "#meet-our-team-sharon-reed-blurb" ).addClass('meet-our-team-blurb-active').removeClass('meet-our-team-blurb-inactive');
+			$( '#meet-our-team-sharon-reed-blurb' ).css({ "color":"#32adbc", });
+			$( '#meet-our-team-sharon-reed-blurb h6' ).css({ "color":"#32adbc", "font-weight": "bold", });
+			$( '.meet-our-team-blurb-inactive, .meet-our-team-blurb-inactive h6' ).css({ "color": "#333", "font-weight": "normal", });
+			$( "#meet-our-team-sharon-reed-blurb .et_pb_image_wrap" ).css({ "border":"solid #32adbc 3px", "border-radius": "200px", });
+			$( ".meet-our-team-blurb-inactive .et_pb_image_wrap" ).css({ "border": "solid #ffffff 3px", });
+		});  
+
+		$( "#meet-our-team-jared-jones-blurb" ).click(function() {
+			$( '.meet-our-team-blurb-active' ).addClass('meet-our-team-blurb-inactive').removeClass('meet-our-team-blurb-active');
+			$( '.meet-our-team-active' ).addClass('meet-our-team-inactive').removeClass('meet-our-team-active').hide();
+			$( "#meet-our-team-jared-jones" ).addClass('meet-our-team-active').removeClass('meet-our-team-inactive').show();
+			$( "#meet-our-team-jared-jones-blurb" ).addClass('meet-our-team-blurb-active').removeClass('meet-our-team-blurb-inactive');
+			$( '#meet-our-team-jared-jones-blurb' ).css({ "color":"#32adbc", });
+			$( '#meet-our-team-jared-jones-blurb h6' ).css({ "color":"#32adbc", "font-weight": "bold", });
+			$( '.meet-our-team-blurb-inactive, .meet-our-team-blurb-inactive h6' ).css({ "color": "#333", "font-weight": "normal", });
+			$( "#meet-our-team-jared-jones-blurb .et_pb_image_wrap" ).css({ "border":"solid #32adbc 3px", "border-radius": "200px", });
+			$( ".meet-our-team-blurb-inactive .et_pb_image_wrap" ).css({ "border": "solid #ffffff 3px", });
+		});  
+
+		$( "#meet-our-team-chris-tamplin-blurb" ).click(function() {
+			$( '.meet-our-team-blurb-active' ).addClass('meet-our-team-blurb-inactive').removeClass('meet-our-team-blurb-active');
+			$( '.meet-our-team-active' ).addClass('meet-our-team-inactive').removeClass('meet-our-team-active').hide();
+			$( "#meet-our-team-chris-tamplin" ).addClass('meet-our-team-active').removeClass('meet-our-team-inactive').show();
+			$( "#meet-our-team-chris-tamplin-blurb" ).addClass('meet-our-team-blurb-active').removeClass('meet-our-team-blurb-inactive');
+			$( '#meet-our-team-chris-tamplin-blurb' ).css({ "color":"#32adbc", });
+			$( '#meet-our-team-chris-tamplin-blurb h6' ).css({ "color":"#32adbc", });
+			$( '.meet-our-team-blurb-inactive, .meet-our-team-blurb-inactive h6' ).css({ "color": "#333", });
+			$( "#meet-our-team-chris-tamplin-blurb .et_pb_image_wrap" ).css({ "border":"solid #32adbc 3px", "border-radius": "200px", });
+			$( ".meet-our-team-blurb-inactive .et_pb_image_wrap" ).css({ "border": "solid #ffffff 3px", });
+		});  
+
+		$( "#meet-our-team-tj-jerome-blurb" ).click(function() {
+			$( '.meet-our-team-blurb-active' ).addClass('meet-our-team-blurb-inactive').removeClass('meet-our-team-blurb-active');
+			$( '.meet-our-team-active' ).addClass('meet-our-team-inactive').removeClass('meet-our-team-active').hide();
+			$( "#meet-our-team-tj-jerome" ).addClass('meet-our-team-active').removeClass('meet-our-team-inactive').show();
+			$( "#meet-our-team-tj-jerome-blurb" ).addClass('meet-our-team-blurb-active').removeClass('meet-our-team-blurb-inactive');
+			$( '#meet-our-team-tj-jerome-blurb' ).css({ "color":"#32adbc", });
+			$( '#meet-our-team-tj-jerome-blurb h6' ).css({ "color":"#32adbc", "font-weight": "bold", });
+			$( '.meet-our-team-blurb-inactive, .meet-our-team-blurb-inactive h6' ).css({ "color": "#333", "font-weight": "normal", });
+			$( "#meet-our-team-tj-jerome-blurb .et_pb_image_wrap" ).css({ "border":"solid #32adbc 3px", "border-radius": "200px", });
+			$( ".meet-our-team-blurb-inactive .et_pb_image_wrap" ).css({ "border": "solid #ffffff 3px", });
+		});  
+
+		$( "#meet-our-team-amanda-bigelow-blurb" ).click(function() {
+			$( '.meet-our-team-blurb-active' ).addClass('meet-our-team-blurb-inactive').removeClass('meet-our-team-blurb-active');
+			$( '.meet-our-team-active' ).addClass('meet-our-team-inactive').removeClass('meet-our-team-active').hide();
+			$( "#meet-our-team-amanda-bigelow" ).addClass('meet-our-team-active').removeClass('meet-our-team-inactive').show();
+			$( "#meet-our-team-amanda-bigelow-blurb" ).addClass('meet-our-team-blurb-active').removeClass('meet-our-team-blurb-inactive');
+			$( '#meet-our-team-amanda-bigelow-blurb' ).css({ "color":"#32adbc", });
+			$( '#meet-our-team-amanda-bigelow-blurb h6' ).css({ "color":"#32adbc", "font-weight": "bold", });
+			$( '.meet-our-team-blurb-inactive, .meet-our-team-blurb-inactive h6' ).css({ "color": "#333", "font-weight": "normal", });
+			$( "#meet-our-team-amanda-bigelow-blurb .et_pb_image_wrap" ).css({ "border":"3px solid #32adbc", "border-radius": "200px", });
+			$( ".meet-our-team-blurb-inactive .et_pb_image_wrap" ).css({ "border": "solid #ffffff 3px", });
+		});  
+
+		$( "#meet-our-team-sylvan-pickett-blurb" ).click(function() {
+			$( '.meet-our-team-blurb-active' ).addClass('meet-our-team-blurb-inactive').removeClass('meet-our-team-blurb-active');
+			$( '.meet-our-team-active' ).addClass('meet-our-team-inactive').removeClass('meet-our-team-active').hide();
+			$( "#meet-our-team-sylvan-pickett" ).addClass('meet-our-team-active').removeClass('meet-our-team-inactive').show();
+			$( "#meet-our-team-sylvan-pickett-blurb" ).addClass('meet-our-team-blurb-active').removeClass('meet-our-team-blurb-inactive');
+			$( '#meet-our-team-sylvan-pickett-blurb' ).css({ "color":"#32adbc", });
+			$( '#meet-our-team-sylvan-pickett-blurb h6' ).css({ "color":"#32adbc", "font-weight": "bold", });
+			$( '.meet-our-team-blurb-inactive, .meet-our-team-blurb-inactive h6' ).css({ "color": "#333", "font-weight": "normal", });
+			$( "#meet-our-team-sylvan-pickett-blurb .et_pb_image_wrap" ).css({ "border":"solid #32adbc 3px", "border-radius": "200px", });
+			$( ".meet-our-team-blurb-inactive .et_pb_image_wrap" ).css({ "border": "solid #ffffff 3px", });
+		});  
+
+		$( "#meet-our-team-lindsey-blurb" ).click(function() {
+			$( '.meet-our-team-blurb-active' ).addClass('meet-our-team-blurb-inactive').removeClass('meet-our-team-blurb-active');
+			$( '.meet-our-team-active' ).addClass('meet-our-team-inactive').removeClass('meet-our-team-active').hide();
+			$( "#meet-our-team-lindsey" ).addClass('meet-our-team-active').removeClass('meet-our-team-inactive').show();
+			$( "#meet-our-team-lindsey-blurb" ).addClass('meet-our-team-blurb-active').removeClass('meet-our-team-blurb-inactive');
+			$( '#meet-our-team-lindsey-blurb' ).css({ "color":"#32adbc", });
+			$( '#meet-our-team-lindsey-blurb h6' ).css({ "color":"#32adbc", "font-weight": "bold", });
+			$( '.meet-our-team-blurb-inactive, .meet-our-team-blurb-inactive h6' ).css({ "color": "#333", "font-weight": "normal", });
+			$( "#meet-our-team-lindsey-blurb .et_pb_image_wrap" ).css({ "border":"solid #32adbc 3px", "border-radius": "200px", });
+			$( ".meet-our-team-blurb-inactive .et_pb_image_wrap" ).css({ "border": "solid #ffffff 3px", });
+		});  
+
+		$( "#meet-our-team-damien-mcintyre-blurb" ).click(function() {
+			$( '.meet-our-team-blurb-active' ).addClass('meet-our-team-blurb-inactive').removeClass('meet-our-team-blurb-active');
+			$( '.meet-our-team-active' ).addClass('meet-our-team-inactive').removeClass('meet-our-team-active').hide();
+			$( "#meet-our-team-damien-mcintyre" ).addClass('meet-our-team-active').removeClass('meet-our-team-inactive').show();
+			$( "#meet-our-team-damien-mcintyre-blurb" ).addClass('meet-our-team-blurb-active').removeClass('meet-our-team-blurb-inactive');
+			$( '#meet-our-team-damien-mcintyre-blurb' ).css({ "color":"#32adbc", });
+			$( '#meet-our-team-damien-mcintyre-blurb h6' ).css({ "color":"#32adbc", "font-weight": "bold", });
+			$( '.meet-our-team-blurb-inactive, .meet-our-team-blurb-inactive h6' ).css({ "color": "#333", "font-weight": "normal", });
+			$( "#meet-our-team-damien-mcintyre-blurb .et_pb_image_wrap" ).css({ "border":"solid #32adbc 3px", "border-radius": "200px", });
+			$( ".meet-our-team-blurb-inactive .et_pb_image_wrap" ).css({ "border": "solid #ffffff 3px", });
+		});  
+		
+
+	});
+});
+</script> 
