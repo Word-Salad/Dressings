@@ -1,0 +1,96 @@
+<script>
+jQuery(function($){
+	$(document).ready(function(){
+
+
+		/*   Get all classes that start with ".product_cat-", create array   */
+		productClassesArray = $('.woocommerce-grouped-product-list tr').map( function(){
+			className = $(this).attr("class").match(/[\w-]*product_cat-[\w-]*/g);
+      		return className;
+		});
+    
+
+
+    	/*   Remove duplicates   */
+		jQuery.unique(productClassesArray);
+    
+
+
+    	/*    Wrap all tr's with class ".product_cat-XXXXX" in a new tr and add new hfbClass (creates groups within groups)   */
+   		hfbClassesArray = productClassesArray.map( function() {
+    		hfbClass = this.replace("product_cat-", "hfb-tr-");
+  			$('.' + this).wrapAll('<tr class="hfb-tr-grouped-product hfb-tr-kratom ' + hfbClass + " " + this + ' "></tr>');
+      		return hfbClass;
+		});
+
+
+
+    	/*   Subsection all of the grouped tr's into a table   */
+    	$('.hfb-tr-grouped-product').wrapInner('<table class="hfb-table-grouped-products woocommerce-grouped-product-list group_table"></table>');
+
+    	/*   Add image table   */
+    	hfbClassesArrayImages = hfbClassesArray.each( function() {
+
+    		/*   Get img src from 1st product in group   */
+    	findImage = $("." + this + " .hfb-table-grouped-products tbody:first-child .woocommerce-grouped-product-thumbnail img").attr("src");
+
+    		/*   Add img to beginning of Group section   */
+    	//	$("." + this).prepend('<div class="hfb-grouped-product-image"><img src="' +  findImage  +  '" /></div>').wrapInner('<div class="hfb-image-and-table"></div>');
+
+    	});
+
+
+
+
+    	/*   Create/add title   */
+			hfbClassesArrayCaps = hfbClassesArray.each( function() {
+
+			/*   Format category name (from "hfb-tr-this-category-name" to "This Category Name")   */
+			hfbCapsName = this.toLowerCase().replace("hfb-tr-", "").replace(/-/g, " ").replace(/\b[a-z]/g, function(txtVal) {
+    			return txtVal.toUpperCase();
+			});
+
+			/*   Add title to beginning of tr   */
+			$("." + this).prepend('<div><h3>' + hfbCapsName + '</h3></div>');
+		});
+		
+
+
+		/*   Format inner tables   */
+    $('.hfb-tr-grouped-product').wrapInner('<div style="margin-bottom: 20px; padding: 30px; background-color: #eaeaea; border-radius: 5px;"></div>');
+    
+    /*   Format Group Image   */
+//		$('.hfb-image-and-table').css({"display": "grid", "grid-template-columns": "1fr 2.5fr", });
+		//$('.woocommerce-grouped-product-thumbnail').hide();
+		
+
+
+		/*   Add default groups to group tr   */
+		$('.hfb-tr-grouped-product').addClass('woocommerce-grouped-product-list-item product type-product status-publish instock  has-post-thumbnail shipping-taxable purchasable product-type-simple');
+    
+    
+    /*   Hide Weird duplicate li's being created   */
+    $('.woocommerce-grouped-product-list li').hide();
+    
+	});
+});
+</script>
+
+
+
+/*   Thumbnails   */
+
+<?php
+add_action( 'woocommerce_grouped_product_list_before_price', 'wc_grouped_product_thumbnail' );
+  
+function wc_grouped_product_thumbnail( $product ) {
+    $image_size = array( 120, 120 );
+    $attachment_id = get_post_meta( $product->get_id(), '_thumbnail_id', true );
+    $link = get_the_permalink( $product->get_id() );
+    ?>
+    <td class="woocommerce-grouped-product-thumbnail">
+        <a href="<?php echo $link; ?>" > <?php echo wp_get_attachment_image( $attachment_id, $image_size ); ?> </a>
+    </td>
+    <?php
+}
+?>
