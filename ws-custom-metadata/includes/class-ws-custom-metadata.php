@@ -87,7 +87,7 @@ class Ws_Custom_Metadata {
 	 * Render admin page.
 	 */
 	public function ws_add_admin_pages() {
-		add_menu_page( 'Custom Metadata', 'Custom Metadata', 'manage_options', 'ws_custom_metadata', array( $this, 'ws_admin_index' ), '', null);
+		add_menu_page( 'WS Custom Metadata', 'WS Custom Metadata', 'manage_options', 'ws_custom_metadata', array( $this, 'ws_admin_index' ), '', null);
 	}
 
 	/**
