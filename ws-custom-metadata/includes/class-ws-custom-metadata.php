@@ -79,6 +79,23 @@ class Ws_Custom_Metadata {
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
 
+		add_action( 'admin_menu', array( $this, 'ws_add_admin_pages' ) );
+
+	}
+
+	/**
+	 * Render admin page.
+	 */
+	public function ws_add_admin_pages() {
+		add_menu_page( 'Custom Metadata', 'Custom Metadata', 'manage_options', 'ws_custom_metadata', array( $this, 'ws_admin_index' ), '', null);
+	}
+
+	/**
+	 * Provide admin page template to the function above
+	 */
+	public function ws_admin_index() {
+		// require template
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/templates/index.php';
 	}
 
 	/**

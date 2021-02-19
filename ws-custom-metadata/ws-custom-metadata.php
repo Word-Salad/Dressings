@@ -15,7 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       WS Custom Metadata
  * Plugin URI:        ws-custom-metadata
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       Manage and Display Metadata (just for users so far)
  * Version:           1.0.0
  * Author:            Word Salad
  * Author URI:        wordsaladcoop@gmail.com
@@ -80,3 +80,13 @@ function run_ws_custom_metadata() {
 
 }
 run_ws_custom_metadata();
+
+/**
+ * Shortcode (show yr info. Throw it in an html block to style.)
+ */
+function ws_user_age () {
+	$user_id = get_current_user_id();
+	$user_age = get_user_meta( $user_id, 'user_age', true );
+	return $user_age;
+}
+add_shortcode('ws_user_age' , 'ws_user_age');
