@@ -84,30 +84,30 @@ run_ws_custom_metadata();
 /**
  * Shortcode (show yr info. Throw it in an html block to style.)
  */
-function $user_meta_1 () {
+function user_meta_1 () {
 	$user_id = get_current_user_id();
-	$user_age = get_user_meta( $user_id, '$user_meta_1', true );
+	$user_meta_1 = get_user_meta( $user_id, 'user_meta_1', true );
 	return $user_meta_1;
 }
-add_shortcode('$user_meta_1' , '$user_meta_1');
+add_shortcode('user_meta_1' , 'user_meta_1');
 
-function $user_meta_2 () {
+function user_meta_2 () {
 	$user_id = get_current_user_id();
-	$user_age = get_user_meta( $user_id, '$user_meta_2', true );
+	$user_meta_2 = get_user_meta( $user_id, 'user_meta_2', true );
 	return $user_meta_2;
 }
-add_shortcode('$user_meta_2' , '$user_meta_2');
+add_shortcode('user_meta_2' , 'user_meta_2');
 
-function $user_meta_3 () {
+function user_meta_3 () {
 	$user_id = get_current_user_id();
-	$user_age = get_user_meta( $user_id, '$user_meta_3', true );
+	$user_ameta_3 = get_user_meta( $user_id, 'user_meta_3', true );
 	return $user_meta_3;
 }
-add_shortcode('$user_meta_3' , '$user_meta_3');
+add_shortcode('user_meta_3' , 'user_meta_3');
 
-function $user_meta_4 () {
+function user_meta_4 () {
 	$user_id = get_current_user_id();
-	$user_age = get_user_meta( $user_id, '$user_meta_4', true );
+	$user_meta_4 = get_user_meta( $user_id, 'user_meta_4', true );
 	return $user_meta_4;
 }
-add_shortcode('$user_meta_4' , '$user_meta_4');
+add_shortcode('user_meta_4' , 'user_meta_4');
