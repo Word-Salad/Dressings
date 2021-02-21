@@ -84,9 +84,30 @@ run_ws_custom_metadata();
 /**
  * Shortcode (show yr info. Throw it in an html block to style.)
  */
-function ws_user_age () {
+function $user_meta_1 () {
 	$user_id = get_current_user_id();
-	$user_age = get_user_meta( $user_id, 'user_age', true );
-	return $user_age;
+	$user_age = get_user_meta( $user_id, '$user_meta_1', true );
+	return $user_meta_1;
 }
-add_shortcode('ws_user_age' , 'ws_user_age');
+add_shortcode('$user_meta_1' , '$user_meta_1');
+
+function $user_meta_2 () {
+	$user_id = get_current_user_id();
+	$user_age = get_user_meta( $user_id, '$user_meta_2', true );
+	return $user_meta_2;
+}
+add_shortcode('$user_meta_2' , '$user_meta_2');
+
+function $user_meta_3 () {
+	$user_id = get_current_user_id();
+	$user_age = get_user_meta( $user_id, '$user_meta_3', true );
+	return $user_meta_3;
+}
+add_shortcode('$user_meta_3' , '$user_meta_3');
+
+function $user_meta_4 () {
+	$user_id = get_current_user_id();
+	$user_age = get_user_meta( $user_id, '$user_meta_4', true );
+	return $user_meta_4;
+}
+add_shortcode('$user_meta_4' , '$user_meta_4');
