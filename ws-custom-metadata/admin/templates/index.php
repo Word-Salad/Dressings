@@ -1,57 +1,31 @@
-<body style="text-align:center;"> 
+<body > 
       
-    <h1>WS Custom Metadata</h1>
+    <h1>Salad</h1>
 
-    <?php
-        if( isset( $_POST['post_user_meta_1'] ) ) {
-            $user_id = get_current_user_id();
-            $user_meta_1 = $_POST['user_meta_1'];
-            update_user_meta($user_id , 'user_meta_1', $user_meta_1);
-            $user_meta_1 = get_user_meta( $user_id, 'user_meta_1', true );
-        }
-      
-      if( isset( $_POST['post_user_meta_2'] ) ) {
-            $user_id = get_current_user_id();
-            $user_meta_2 = $_POST['user_meta_2'];
-            update_user_meta($user_id , 'user_meta_2', $user_meta_2);
-            $user_meta_2 = get_user_meta( $user_id, 'user_meta_2', true );
-        }
-      
-      if( isset( $_POST['post_user_meta_3'] ) ) {
-            $user_id = get_current_user_id();
-            $user_meta_3 = $_POST['user_meta_3'];
-            update_user_meta($user_id , 'user_meta_3', $user_meta_3);
-            $user_meta_3 = get_user_meta( $user_id, 'user_meta_3', true );
-        }
-      
-      if( isset( $_POST['post_user_meta_4'] ) ) {
-            $user_id = get_current_user_id();
-            $user_meta_4 = $_POST['user_meta'];
-            update_user_meta($user_id , 'user_meta_4', $user_meta_4);
-            $user_meta_4 = get_user_meta( $user_id, 'user_meta_4', true );
-        }
-    ?>
+    <div>
+      <?php
+        require plugin_dir_path( __FILE__ ) . 'test/class-ws-input-generator.php';
+        $generator = new Ws_Input_Generator();
+        $generator->salad_generate();
 
-    <form method="POST">
-        <ul>
-            <li>
-              <input type="text" placeholder="<? echo get_user_meta( get_current_user_id(), 'user_meta_1', true ); ?>" name="user_meta_1">
-              <input type="submit" name="post_user_meta_1" method="post">
-              </li>
-            <li>
-              <input type="text" placeholder="<? echo get_user_meta( get_current_user_id(), 'user_meta_2', true ); ?>" name="user_meta_2">
-              <input type="submit" name="post_user_meta_2" method="post">
-              </li>
-            <li>
-              <input type="text" placeholder="<? echo get_user_meta( get_current_user_id(), 'user_meta_3', true ); ?>" name="user_meta_3">
-              <input type="submit" name="post_user_meta_3" method="post">
-              </li>
-            <li>
-              <input type="text" placeholder="<? echo get_user_meta( get_current_user_id(), 'user_meta_4', true ); ?>" name="user_meta_4">
-              <input type="submit" name="post_user_meta_4" method="post">
-              </li>
-        </ul>
-    <input type="submit" name="form_submit" method="post">
-    </form>
+        echo '<br>';
 
+        $user_id = get_current_user_id();
+        $all_meta = get_user_meta( $user_id, '', false );
+
+
+        foreach($all_meta as $key => $value) {
+          if( isset( $_POST['submit_' . $key] ) ) {
+              update_user_meta($user_id , $key, $_POST["set_value_$key"]);
+          }
+        ?>
+          <form method="POST">
+            <label><?php echo $key ?>: </label>
+            <input type="text" placeholder="<?php echo $value[0] ?>" name="set_value_<?php echo $key ?>">
+            <input type="submit" name="submit_<?php echo $key ?>" method="post">
+          </form>
+        <?php
+        };
+      ?>
+    </div>
 </body>
