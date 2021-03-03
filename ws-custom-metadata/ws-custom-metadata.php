@@ -81,12 +81,52 @@ function run_ws_custom_metadata() {
 }
 run_ws_custom_metadata();
 
-/**
- * Shortcode (show yr info. Throw it in an html block to style.)
- */
-function user_meta_1 () {
-	$user_id = get_current_user_id();
-	$user_meta_1 = get_user_meta( $user_id, 'user_meta_1', true );
-	return $user_meta_1;
+
+
+function fb_add_custom_user_profile_fields( $user ) {
+	
+	$all_meta = get_user_meta($user->ID, '', false);
+?>
+	<h3><?php _e('Extra Profile Information', 'your_textdomain'); ?></h3>
+
+	<table class="form-table">
+	<?php foreach ($all_meta as $key => $value) { 
+		if (strpos($key, 'salad_') !== false) {
+			$key = str_replace('salad_', '', $key);
+	?>
+			<tr>
+				<th><label for="<?php echo $key ?>"><?php _e("$key", 'your_textdomain'); ?></label></th>
+				<td>
+					<input type="text" name="<?php echo $key ?>" id="<?php echo $key ?>" value="<?php echo $value[0] ?>" class="regular-text" /><br />
+					<span class="description"><?php _e("Update $key", 'your_textdomain'); ?></span>
+				</td>
+			</tr>
+		<?php 
+		} ?>
+	<?php 
+	} ?>
+	</table>
+<?php 
 }
-add_shortcode('user_meta_1' , 'user_meta_1');
+
+function fb_save_custom_user_profile_fields( $user_id ) {
+	
+	if ( !current_user_can( 'edit_user', $user_id ) ) {
+		return FALSE;
+	} else {
+		$all_meta = get_user_meta($user_id, '', false);
+	
+		foreach ($all_meta as $key => $value) { 
+			if (strpos($key, 'salad_') !== false) {
+				$key = str_replace('salad_', '', $key);
+				update_usermeta( $user_id, 'salad_' . "$key", $_POST["$key"] );
+			}
+		}
+	}
+}
+
+add_action( 'show_user_profile', 'fb_add_custom_user_profile_fields' );
+add_action( 'edit_user_profile', 'fb_add_custom_user_profile_fields' );
+
+add_action( 'personal_options_update', 'fb_save_custom_user_profile_fields' );
+add_action( 'edit_user_profile_update', 'fb_save_custom_user_profile_fields' );
