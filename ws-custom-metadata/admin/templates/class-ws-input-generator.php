@@ -13,20 +13,18 @@ class Ws_Input_Generator {
 				update_user_meta($user->ID , 'salad_' . $_POST["set_key"], $_POST["set_value"]);
 			}
         }
-
-		$the_meta = get_user_meta($all_users[0]->ID, '', false);
-		var_dump($the_meta);
-
 	  ?>
  		<form method="POST">
 			<input type="text" placeholder="set key" name="set_key">
 			<input type="text" placeholder="set value" name="set_value">
-			<input type="submit" name="submit_new_meta" method="post">
+			<input type="submit" name="submit_new_meta">
 		</form>
 	  <?php
 	}
 
 	public function salad_list_meta() {
+
+		//getting salad meta by current user (bad)
 		$user_id = get_current_user_id();
 		$all_meta = get_user_meta($user_id, '', false);
 
@@ -35,8 +33,10 @@ class Ws_Input_Generator {
 			  $key = str_replace('salad_', '', $key);
 			  
 				if( isset( $_POST["submit_$key"] ) ) {
-					$user_id = get_current_user_id();
-					update_user_meta($user_id , "salad_$key", $_POST["set_value_$key"]);
+					$all_users = get_users();
+					foreach ($all_users as $user) {
+						update_user_meta($user->ID , 'salad_' . $_POST["set_key"], $_POST["set_value"]);
+					}
 				}
 		  ?>
 			<form method="POST">

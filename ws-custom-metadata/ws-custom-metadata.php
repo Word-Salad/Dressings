@@ -9,14 +9,14 @@
  * that starts the plugin.
  *
  * @link              wordsaladcoop@gmail.com
- * @since             1.0.0
+ * @since             0.0.0
  * @package           Ws_Custom_Metadata
  *
  * @wordpress-plugin
  * Plugin Name:       WS Custom Metadata
  * Plugin URI:        ws-custom-metadata
  * Description:       Manage and Display Metadata (just for users so far)
- * Version:           1.0.0
+ * Version:           0.0.0
  * Author:            Word Salad
  * Author URI:        wordsaladcoop@gmail.com
  * License:           GPL-2.0+
@@ -35,7 +35,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'WS_CUSTOM_METADATA_VERSION', '1.0.0' );
+define( 'WS_CUSTOM_METADATA_VERSION', '0.0.3' );
 
 /**
  * The code that runs during plugin activation.
