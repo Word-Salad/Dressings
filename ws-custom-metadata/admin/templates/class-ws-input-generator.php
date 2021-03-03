@@ -6,13 +6,14 @@ class Ws_Input_Generator {
 		//
 	}
 
-	public function salad_generate() {
+	public function salad_add_meta() {
         if( isset( $_POST['submit_new_meta'] ) ) {
-            $user_id = get_current_user_id();
-            update_user_meta($user_id , 'salad_' . $_POST["set_key"], $_POST["set_value"]);
+			$all_users = get_users();
+			foreach ($all_users as $user) {
+				update_user_meta($user->ID , 'salad_' . $_POST["set_key"], $_POST["set_value"]);
+			}
         }
 
-		$all_users = get_users();
 		$the_meta = get_user_meta($all_users[0]->ID, '', false);
 		var_dump($the_meta);
 

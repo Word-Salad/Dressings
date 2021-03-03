@@ -7,7 +7,7 @@
     require_once 'class-ws-input-generator.php';
     $generator = new Ws_Input_Generator();
     
-    $generator->salad_generate();
+    $generator->salad_add_meta();
     echo '<br>';
     $generator->salad_list_meta();
     ?>
