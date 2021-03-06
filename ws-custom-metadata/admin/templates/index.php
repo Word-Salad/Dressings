@@ -9,7 +9,7 @@
     
     $generator->salad_add_meta();
     echo '<br>';
-    $generator->salad_list_meta();
+    $generator->salad_delete_meta();
     ?>
   </div>
 </body>

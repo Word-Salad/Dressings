@@ -67,6 +67,7 @@ class Ws_Custom_Metadata {
 	 * @since    1.0.0
 	 */
 	public function __construct() {
+
 		if ( defined( 'WS_CUSTOM_METADATA_VERSION' ) ) {
 			$this->version = WS_CUSTOM_METADATA_VERSION;
 		} else {
@@ -80,7 +81,59 @@ class Ws_Custom_Metadata {
 		$this->define_public_hooks();
 
 		add_action( 'admin_menu', array( $this, 'ws_add_admin_pages' ) );
+		add_action( 'show_user_profile', array( $this, 'salad_add_custom_user_profile_fields' ) );
+		add_action( 'edit_user_profile', array( $this, 'salad_add_custom_user_profile_fields' ) );
+		add_action( 'personal_options_update', array( $this, 'salad_save_custom_user_profile_fields' ) );
+		add_action( 'edit_user_profile_update', array( $this, 'salad_save_custom_user_profile_fields' ) );
 
+	}
+
+	/**
+	 * add custom meta feilds to profile page per user
+	 */
+	public function salad_add_custom_user_profile_fields( $user ) {
+	
+		$all_meta = get_user_meta($user->ID, '', false);
+	?>
+		<h3><?php _e('Extra Profile Information', 'your_textdomain'); ?></h3>
+	
+		<table class="form-table">
+		<?php foreach ($all_meta as $key => $value) { 
+			if (strpos($key, 'salad_') !== false) {
+				$key = str_replace('salad_', '', $key);
+		?>
+				<tr>
+					<th><label for="<?php echo $key ?>"><?php _e("$key", 'your_textdomain'); ?></label></th>
+					<td>
+						<input type="text" name="<?php echo $key ?>" id="<?php echo $key ?>" value="<?php echo $value[0] ?>" class="regular-text" /><br />
+						<span class="description"><?php _e("Update $key", 'your_textdomain'); ?></span>
+					</td>
+				</tr>
+			<?php 
+			} ?>
+		<?php 
+		} ?>
+		</table>
+	<?php 
+	}
+
+	/**
+	 * save custom meta fields on user profile "save"
+	 */
+	function salad_save_custom_user_profile_fields( $user_id ) {
+		
+		if ( !current_user_can( 'edit_user', $user_id ) ) {
+			return FALSE;
+		} else {
+			$all_meta = get_user_meta($user_id, '', false);
+		
+			foreach ($all_meta as $key => $value) { 
+				if (strpos($key, 'salad_') !== false) {
+					$key = str_replace('salad_', '', $key);
+					update_usermeta( $user_id, 'salad_' . "$key", $_POST["$key"] );
+				}
+			}
+		}
 	}
 
 	/**
@@ -94,7 +147,6 @@ class Ws_Custom_Metadata {
 	 * Provide admin page template to the function above
 	 */
 	public function ws_admin_index() {
-		// require template
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/templates/index.php';
 	}
 
